@@ -13,6 +13,39 @@ begin
 	using Random
 end
 
+# ╔═╡ 430818fc-b20f-4976-a4a2-a3c52ae6babe
+md""" # Blackjack"""
+
+# ╔═╡ e38f9926-459f-4494-a2bc-880300e00493
+md"""
+In Blackjack, everyone plays against the **dealer** (the house). Your goal is to draw cards with a value as close to **21** as possible **without going over**. A hand that goes over 21 is a bust or break . The players at a blackjack table do not play against each other, they play against the dealer. Each player only has to beat the dealer's hand to Win. You do this in one of two ways: **1** Have a card total value greater than that of the dealer and not "bust". **2** Win "by default” if the dealer "busts. """
+
+# ╔═╡ 0b07c586-715c-4ca0-958d-bd3986dd82f9
+html"""
+<a href="https://towardsdatascience.com/lets-play-blackjack-with-python-913ec66c732f">This follows 'Let’s Play Blackjack (with Python)' by Tony Yiu</a>
+
+"""
+
+# ╔═╡ 95263b33-da0d-4fd1-9aaf-b1752a43321a
+html"<br>"
+
+# ╔═╡ dd857cf3-6158-4c22-94de-68e0ee3c5476
+md"""
+
+## Rules for this simulation:
+
+##### 1. The dealer hits until their hand is 17 or more.
+
+##### 2. The player must hit if their hand is 11 or less.
+
+##### 3. The player has 50% chance to fold if the value of their hand is 12 or more.
+
+##### 4. Each deck of cards will be used until the number of cards in the deck is less than 20.
+
+##### 5. No 5 card rule.
+
+"""
+
 # ╔═╡ 0243e1a5-6707-44d4-95dc-f3f0c19ef4e1
 begin
 	#aces can be either 1 or 11
@@ -1565,6 +1598,11 @@ version = "0.9.1+5"
 """
 
 # ╔═╡ Cell order:
+# ╟─430818fc-b20f-4976-a4a2-a3c52ae6babe
+# ╟─e38f9926-459f-4494-a2bc-880300e00493
+# ╟─0b07c586-715c-4ca0-958d-bd3986dd82f9
+# ╟─95263b33-da0d-4fd1-9aaf-b1752a43321a
+# ╟─dd857cf3-6158-4c22-94de-68e0ee3c5476
 # ╠═fe017b32-ca30-11ec-20f5-cd3328a3a13a
 # ╠═0243e1a5-6707-44d4-95dc-f3f0c19ef4e1
 # ╠═e33bcfb7-d37b-4cff-a9ae-759c8470d4b7
